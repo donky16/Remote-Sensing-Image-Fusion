@@ -15,4 +15,6 @@
   ![](http://ww1.sinaimg.cn/large/006B2c7cly1fwplcynbaxj3074074jrl.jpg)
  
 ## 遥感图像融合（分行） ##
-- 图片太大，下载地址[http://donky.top/img/bed/Big-image-fusion.tif](http://donky.top/img/bed/Big-image-fusion.tif)
+- 待融合图像mul [http://donky.top/img/bed/Mul_large.tif](http://donky.top/img/bed/Mul_large.tif)
+- 待融合图像pan [http://donky.top/img/bed/Pan_large.tif](http://donky.top/img/bed/Pan_large.tif)
+- 融合图像[http://donky.top/img/bed/Big-image-fusion.tif](http://donky.top/img/bed/Big-image-fusion.tif)
