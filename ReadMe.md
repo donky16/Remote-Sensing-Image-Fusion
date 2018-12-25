@@ -1,5 +1,5 @@
 ## 滤波器功能 ##
-- 原图 lena.jpg
+- 原图 lena.jpg   
 ![](http://ww1.sinaimg.cn/large/006B2c7cly1fwpl5x9651j30740740ty.jpg)
 - 均值模糊
   ![](http://ww1.sinaimg.cn/large/006B2c7cly1fwpl88uz13j3074074dg2.jpg)
