@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{BDEBB256-6A76-4C6B-80E4-473DC66BE8DA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GDALDemo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gdal\cplkeywordparser.h" />
+    <ClInclude Include="gdal\cpl_config.h" />
+    <ClInclude Include="gdal\cpl_conv.h" />
+    <ClInclude Include="gdal\cpl_csv.h" />
+    <ClInclude Include="gdal\cpl_error.h" />
+    <ClInclude Include="gdal\cpl_hash_set.h" />
+    <ClInclude Include="gdal\cpl_http.h" />
+    <ClInclude Include="gdal\cpl_list.h" />
+    <ClInclude Include="gdal\cpl_minixml.h" />
+    <ClInclude Include="gdal\cpl_minizip_ioapi.h" />
+    <ClInclude Include="gdal\cpl_minizip_unzip.h" />
+    <ClInclude Include="gdal\cpl_multiproc.h" />
+    <ClInclude Include="gdal\cpl_odbc.h" />
+    <ClInclude Include="gdal\cpl_port.h" />
+    <ClInclude Include="gdal\cpl_quad_tree.h" />
+    <ClInclude Include="gdal\cpl_string.h" />
+    <ClInclude Include="gdal\cpl_vsi.h" />
+    <ClInclude Include="gdal\cpl_vsi_virtual.h" />
+    <ClInclude Include="gdal\cpl_win32ce_api.h" />
+    <ClInclude Include="gdal\cpl_wince.h" />
+    <ClInclude Include="gdal\gdal.h" />
+    <ClInclude Include="gdal\gdalgrid.h" />
+    <ClInclude Include="gdal\gdaljp2metadata.h" />
+    <ClInclude Include="gdal\gdalwarper.h" />
+    <ClInclude Include="gdal\gdal_alg.h" />
+    <ClInclude Include="gdal\gdal_alg_priv.h" />
+    <ClInclude Include="gdal\gdal_frmts.h" />
+    <ClInclude Include="gdal\gdal_pam.h" />
+    <ClInclude Include="gdal\gdal_priv.h" />
+    <ClInclude Include="gdal\gdal_proxy.h" />
+    <ClInclude Include="gdal\gdal_rat.h" />
+    <ClInclude Include="gdal\gdal_version.h" />
+    <ClInclude Include="gdal\gdal_vrt.h" />
+    <ClInclude Include="gdal\gvgcpfit.h" />
+    <ClInclude Include="gdal\memdataset.h" />
+    <ClInclude Include="gdal\ogrsf_frmts.h" />
+    <ClInclude Include="gdal\ogr_api.h" />
+    <ClInclude Include="gdal\ogr_attrind.h" />
+    <ClInclude Include="gdal\ogr_core.h" />
+    <ClInclude Include="gdal\ogr_feature.h" />
+    <ClInclude Include="gdal\ogr_featurestyle.h" />
+    <ClInclude Include="gdal\ogr_geometry.h" />
+    <ClInclude Include="gdal\ogr_geos.h" />
+    <ClInclude Include="gdal\ogr_p.h" />
+    <ClInclude Include="gdal\ogr_spatialref.h" />
+    <ClInclude Include="gdal\ogr_srs_api.h" />
+    <ClInclude Include="gdal\rawdataset.h" />
+    <ClInclude Include="gdal\swq.h" />
+    <ClInclude Include="gdal\thinplatespline.h" />
+    <ClInclude Include="gdal\vrtdataset.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GDALDemo.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Data\output\American-fusion.tif" />
+    <Image Include="Data\output\convolution-1.jpg" />
+    <Image Include="Data\output\convolution-2.jpg" />
+    <Image Include="Data\output\convolution-3.jpg" />
+    <Image Include="Data\output\convolution-4.jpg" />
+    <Image Include="Data\output\convolution-5.jpg" />
+    <Image Include="Data\output\convolution-6.jpg" />
+    <Image Include="Data\output\result_modify.tif" />
+    <Image Include="Data\output\superman-on-the-space.tif" />
+    <Image Include="Data\pictures\American-MUL.bmp" />
+    <Image Include="Data\pictures\American-PAN.bmp" />
+    <Image Include="Data\pictures\lena.jpg" />
+    <Image Include="Data\pictures\space.jpg" />
+    <Image Include="Data\pictures\superman.jpg" />
+    <Image Include="Data\pictures\Taeyeon.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
